@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ecom.analytics</groupId>
+        <artifactId>ecom-analytics</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>ecom-analytics-bigdata</artifactId>
+    <description>
+        大数据处理层骨架：
+        1. Kafka 高吞吐埋点通道（替代 RocketMQ 处理 PB 级双十一洪峰）
+        2. Flink 实时清洗作业骨架（清洗 → 双流Join → 落 ClickHouse）
+        3. Canal MySQL binlog 监听（同步 order_sync → ES）
+        注：Flink 作业独立部署到 Flink 集群，此模块仅含代码骨架和说明。
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ecom.analytics</groupId>
+            <artifactId>ecom-analytics-common</artifactId>
+        </dependency>
+
+        <!-- Kafka Client -->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+
+        <!-- Flink（provided，运行时由 Flink 集群提供） -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-streaming-java</artifactId>
+            <version>1.18.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-kafka</artifactId>
+            <version>3.1.0-1.18</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+    </dependencies>
+</project>
