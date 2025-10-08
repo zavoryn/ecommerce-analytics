@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ecom.analytics</groupId>
+        <artifactId>ecom-analytics</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>ecom-analytics-common</artifactId>
+    <name>ecom-analytics-common</name>
+    <description>公共模块:DTO/枚举/统一响应/工具</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <!--
+          logstash-logback-encoder 用于 prod profile JSON 日志输出。
+          直接依赖(非 optional), 各业务模块通过依赖 common 即可获得 JSON 日志能力。
+        -->
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+        </dependency>
+        <!--
+          actuator + micrometer-registry-prometheus: 暴露 /actuator/prometheus 端点。
+          BusinessMetrics 工具基于 micrometer 自定义业务指标(埋点 QPS / MQ 延迟 / 聚合耗时)。
+          直接依赖, 全模块统一开启可观测。
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+        </dependency>
+        <!--
+          spring-web 与 servlet 提供异常处理、过滤器、MDC 依赖；
+          标记 optional：common 自身编译需要，但不向下游 web 模块传递（避免污染 gateway 的 webflux 栈）。
+          下游 servlet 模块（collector/processor/query/search）通过自己声明的 spring-boot-starter-web 拿到这些类。
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--
+          spring-messaging 与 rocketmq-client 用于 RocketMqTrace 工具(MQ traceId 透传)；
+          optional：collector/processor 通过 rocketmq-spring-boot-starter 传递性获取实际依赖。
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-messaging</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-client</artifactId>
+            <version>4.9.7</version>
+            <optional>true</optional>
+        </dependency>
+        <!--
+          JJWT 仅 gateway(校验) 与 collector(签发) 使用, 其他模块靠 Gateway 注入的 X-User-Id 即可。
+          optional 表明 common 提供 JwtUtil 工具类, 下游模块按需引入 jjwt 后即可使用。
+        -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-api</artifactId>
+            <version>0.12.5</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-impl</artifactId>
+            <version>0.12.5</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-jackson</artifactId>
+            <version>0.12.5</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+</project>
