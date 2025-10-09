@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  公共 logback 配置 - 通过依赖 ecom-analytics-common 自动生效。
+
+  Profile 行为:
+    dev (默认)       - 彩色 console, 含 traceId
+    prod             - JSON 文件输出 + ERROR 单独成文件, 按天 + 100MB 滚动, 保留 30 天
+                       JSON 结构: ts / level / logger / msg / traceId / service / stack
+
+  如某个服务需个性化, 在自己 resources/ 放 logback-spring.xml 会覆盖本配置。
+-->
+<configuration scan="true" scanPeriod="60 seconds">
+
+    <springProperty scope="context" name="SERVICE" source="spring.application.name" defaultValue="ecom-analytics"/>
+    <property name="LOG_DIR" value="${LOG_DIR:-logs}"/>
+
+    <!-- ────────────── DEV: console 彩色 ────────────── -->
+    <springProfile name="dev,default">
+        <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder>
+                <pattern>%d{HH:mm:ss.SSS} [traceId=%X{traceId:-}] %highlight(%-5level) %cyan(%logger{36}) - %msg%n</pattern>
+            </encoder>
+        </appender>
+        <root level="INFO">
+            <appender-ref ref="CONSOLE"/>
+        </root>
+    </springProfile>
+
+    <!-- ────────────── PROD: JSON 文件 (ELK / Loki ingest) ────────────── -->
+    <springProfile name="prod">
+        <!-- 主日志: 所有 INFO+ -->
+        <appender name="JSON_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${LOG_DIR}/${SERVICE}.log</file>
+            <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+                <fileNamePattern>${LOG_DIR}/${SERVICE}.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+                <maxFileSize>100MB</maxFileSize>
+                <maxHistory>30</maxHistory>
+                <totalSizeCap>20GB</totalSizeCap>
+            </rollingPolicy>
+            <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+                <providers>
+                    <timestamp><fieldName>ts</fieldName><pattern>yyyy-MM-dd'T'HH:mm:ss.SSSXXX</pattern></timestamp>
+                    <logLevel><fieldName>level</fieldName></logLevel>
+                    <loggerName><fieldName>logger</fieldName><shortenedLoggerNameLength>40</shortenedLoggerNameLength></loggerName>
+                    <threadName><fieldName>thread</fieldName></threadName>
+                    <message><fieldName>msg</fieldName></message>
+                    <mdc/>
+                    <stackTrace>
+                        <fieldName>stack</fieldName>
+                        <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">
+                            <maxDepthPerThrowable>30</maxDepthPerThrowable>
+                            <rootCauseFirst>true</rootCauseFirst>
+                        </throwableConverter>
+                    </stackTrace>
+                    <pattern>
+                        <pattern>{"service":"${SERVICE}"}</pattern>
+                    </pattern>
+                </providers>
+            </encoder>
+        </appender>
+
+        <!-- ERROR 单独成文件, 方便扫描告警 -->
+        <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${LOG_DIR}/${SERVICE}-error.log</file>
+            <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                <level>ERROR</level>
+            </filter>
+            <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+                <fileNamePattern>${LOG_DIR}/${SERVICE}-error.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+                <maxFileSize>100MB</maxFileSize>
+                <maxHistory>60</maxHistory>
+            </rollingPolicy>
+            <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+                <providers>
+                    <timestamp><fieldName>ts</fieldName></timestamp>
+                    <logLevel><fieldName>level</fieldName></logLevel>
+                    <loggerName><fieldName>logger</fieldName></loggerName>
+                    <threadName><fieldName>thread</fieldName></threadName>
+                    <message><fieldName>msg</fieldName></message>
+                    <mdc/>
+                    <stackTrace>
+                        <fieldName>stack</fieldName>
+                        <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">
+                            <maxDepthPerThrowable>50</maxDepthPerThrowable>
+                            <rootCauseFirst>true</rootCauseFirst>
+                        </throwableConverter>
+                    </stackTrace>
+                    <pattern>
+                        <pattern>{"service":"${SERVICE}"}</pattern>
+                    </pattern>
+                </providers>
+            </encoder>
+        </appender>
+
+        <root level="INFO">
+            <appender-ref ref="JSON_FILE"/>
+            <appender-ref ref="ERROR_FILE"/>
+        </root>
+
+        <!-- 第三方组件日志降级到 WARN, 防止淹没业务日志 -->
+        <logger name="org.springframework" level="WARN"/>
+        <logger name="org.apache.rocketmq" level="WARN"/>
+        <logger name="org.apache.kafka" level="WARN"/>
+        <logger name="com.zaxxer.hikari" level="WARN"/>
+        <logger name="org.elasticsearch" level="WARN"/>
+    </springProfile>
+
+</configuration>
