@@ -1,0 +1,26 @@
+{
+  "comment": "订单事件索引 Mapping（解决 MySQL 跨月分表深分页问题，面试稿 2.7）",
+  "settings": {
+    "number_of_shards": 3,
+    "number_of_replicas": 1
+  },
+  "mappings": {
+    "properties": {
+      "orderId": { "type": "long" },
+      "userId": { "type": "long" },
+      "itemId": { "type": "long" },
+      "category": { "type": "keyword" },
+      "orderAmount": { "type": "double" },
+      "orderStatus": {
+        "type": "integer",
+        "comment": "0待支付 1已支付 2已取消 3已退款"
+      },
+      "deviceId": { "type": "keyword" },
+      "orderTime": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss||epoch_millis",
+        "comment": "search_after 深分页排序字段"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<clickhouse>
+    <remote_servers>
+        <ecom_cluster>
+            <shard>
+                <internal_replication>true</internal_replication>
+                <replica><host>ck-shard1-replica1</host><port>9000</port></replica>
+                <replica><host>ck-shard1-replica2</host><port>9000</port></replica>
+            </shard>
+            <shard>
+                <internal_replication>true</internal_replication>
+                <replica><host>ck-shard2-replica1</host><port>9000</port></replica>
+                <replica><host>ck-shard2-replica2</host><port>9000</port></replica>
+            </shard>
+        </ecom_cluster>
+    </remote_servers>
+    <zookeeper><node><host>ck-zookeeper</host><port>2181</port></node></zookeeper>
+    <macros>
+        <shard>02</shard>
+        <replica>ck-shard2-replica1</replica>
+    </macros>
+</clickhouse>

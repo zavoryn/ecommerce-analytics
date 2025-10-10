@@ -1,0 +1,102 @@
+{
+  "title": "ecom-analytics 总览",
+  "uid": "ecom-overview",
+  "schemaVersion": 38,
+  "version": 1,
+  "refresh": "10s",
+  "timezone": "browser",
+  "panels": [
+    {
+      "id": 1,
+      "title": "埋点采集 QPS (ok/fail/dup)",
+      "type": "timeseries",
+      "gridPos": {"x": 0, "y": 0, "w": 12, "h": 8},
+      "targets": [
+        {
+          "expr": "sum by (result) (rate(ecom_event_collect_total[1m]))",
+          "legendFormat": "{{result}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "埋点接口 P95 延迟",
+      "type": "timeseries",
+      "gridPos": {"x": 12, "y": 0, "w": 12, "h": 8},
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le, event_name) (rate(ecom_event_collect_seconds_bucket[5m])))",
+          "legendFormat": "{{event_name}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "MQ 消费延迟 (从生产到消费, ms)",
+      "type": "timeseries",
+      "gridPos": {"x": 0, "y": 8, "w": 12, "h": 8},
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le, topic) (rate(ecom_mq_consume_latency_ms_bucket[1m])))",
+          "legendFormat": "{{topic}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "MQ 消费结果",
+      "type": "timeseries",
+      "gridPos": {"x": 12, "y": 8, "w": 12, "h": 8},
+      "targets": [
+        {
+          "expr": "sum by (topic, result) (rate(ecom_mq_consume_total[1m]))",
+          "legendFormat": "{{topic}}-{{result}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "缓存命中率",
+      "type": "stat",
+      "gridPos": {"x": 0, "y": 16, "w": 8, "h": 6},
+      "targets": [
+        {
+          "expr": "sum(rate(ecom_cache_total{result=\"hit\"}[5m])) / sum(rate(ecom_cache_total[5m]))",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {"defaults": {"unit": "percentunit"}}
+    },
+    {
+      "id": 6,
+      "title": "JVM 堆使用率",
+      "type": "timeseries",
+      "gridPos": {"x": 8, "y": 16, "w": 16, "h": 6},
+      "targets": [
+        {
+          "expr": "jvm_memory_used_bytes{area=\"heap\"} / jvm_memory_max_bytes{area=\"heap\"}",
+          "legendFormat": "{{service}}",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {"defaults": {"unit": "percentunit"}}
+    },
+    {
+      "id": 7,
+      "title": "聚合任务每步耗时 P95",
+      "type": "timeseries",
+      "gridPos": {"x": 0, "y": 22, "w": 24, "h": 8},
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le, step) (rate(ecom_agg_task_duration_seconds_bucket[10m])))",
+          "legendFormat": "{{step}}",
+          "refId": "A"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "comment": "商品索引 Mapping（面试稿 1.5：IK分词 + 倒排索引）",
+  "settings": {
+    "number_of_shards": 3,
+    "number_of_replicas": 1,
+    "analysis": {
+      "analyzer": {
+        "ik_smart_analyzer": {
+          "type": "custom",
+          "tokenizer": "ik_smart"
+        },
+        "ik_max_word_analyzer": {
+          "type": "custom",
+          "tokenizer": "ik_max_word"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "itemId": {
+        "type": "long"
+      },
+      "title": {
+        "type": "text",
+        "analyzer": "ik_max_word",
+        "search_analyzer": "ik_smart",
+        "comment": "IK中文分词：'夏季修身连衣裙' -> ['夏季','修身','连衣裙']，命中任一词即可检索"
+      },
+      "category": {
+        "type": "keyword",
+        "comment": "精确匹配/聚合，不分词"
+      },
+      "brand": {
+        "type": "keyword"
+      },
+      "price": {
+        "type": "double"
+      },
+      "status": {
+        "type": "integer",
+        "comment": "1在售 0下架"
+      },
+      "sales30d": {
+        "type": "long",
+        "comment": "近30天销量，search_after排序主键之一"
+      },
+      "createTime": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss||epoch_millis"
+      },
+      "updateTime": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss||epoch_millis"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+apiVersion: 1
+
+# 告警接收方 - 飞书机器人 webhook。
+#
+# 与 Java 侧 LarkAlertService 同一个 webhook, 但 Grafana 走自己的 contact point,
+# 因为它的告警源是 Prometheus 指标 / Loki 日志, 不经过应用代码。
+#
+# 生产建议: webhook 通过环境变量注入, 不要 hardcode 在 yaml 里。
+contactPoints:
+  - orgId: 1
+    name: lark-default
+    receivers:
+      - uid: lark-bot
+        type: webhook
+        settings:
+          url: ${LARK_WEBHOOK:-https://open.feishu.cn/open-apis/bot/v2/hook/CHANGE_ME}
+          httpMethod: POST
+          # 飞书机器人 markdown 卡片格式
+          message: |
+            {
+              "msg_type": "interactive",
+              "card": {
+                "header": {
+                  "title": {
+                    "tag": "plain_text",
+                    "content": "[{{ .Status | toUpper }}] {{ .CommonLabels.alertname }}"
+                  },
+                  "template": "{{ if eq .Status \"firing\" }}red{{ else }}green{{ end }}"
+                },
+                "elements": [{
+                  "tag": "markdown",
+                  "content": "**触发时间**: {{ .Alerts.Firing | len }} 条告警 firing\n**服务**: {{ .CommonLabels.service }}\n**摘要**: {{ range .Alerts }}\n- {{ .Annotations.summary }}\n  详情: {{ .Annotations.description }}\n{{ end }}"
+                }]
+              }
+            }
+        disableResolveMessage: false
