@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+  - name: ecom-analytics
+    orgId: 1
+    folder: ecom-analytics
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards

@@ -1,0 +1,149 @@
+apiVersion: 1
+
+# 告警规则 - 同时覆盖 Prometheus(指标) 与 Loki(日志) 两个数据源。
+#
+# 触发条件设计:
+#   - "持续 N 分钟" 而非"瞬时", 避免毛刺误报
+#   - severity 与 LarkAlertService.AlertLevel 对齐 (info/warn/error/critical)
+groups:
+  # ────────────── Prometheus 指标告警 ──────────────
+  - orgId: 1
+    name: metrics-alerts
+    folder: ecom-analytics
+    interval: 1m
+    rules:
+      # 埋点错误率 > 5%
+      - uid: alert-event-error-rate
+        title: 埋点上报错误率过高
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange: { from: 600, to: 0 }
+            model:
+              expr: |
+                sum(rate(ecom_event_collect_total{result="fail"}[5m]))
+                / sum(rate(ecom_event_collect_total[5m])) > 0.05
+              instant: true
+              refId: A
+        for: 5m
+        labels:
+          severity: error
+          service: collector
+        annotations:
+          summary: 埋点接口 5min 错误率超过 5%
+          description: 检查 MQ 连通性 / Redis / 下游持久化
+
+      # MQ 消费延迟 P95 > 5s
+      - uid: alert-mq-latency
+        title: MQ 消费延迟过高
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange: { from: 600, to: 0 }
+            model:
+              expr: |
+                histogram_quantile(0.95,
+                  sum by (le, topic) (rate(ecom_mq_consume_latency_ms_bucket[5m]))
+                ) > 5000
+              instant: true
+              refId: A
+        for: 5m
+        labels:
+          severity: warn
+          service: processor
+        annotations:
+          summary: MQ 消费 P95 延迟 > 5s
+          description: '{{ $labels.topic }} 延迟过高, 检查 processor 实例数 / DB 压力'
+
+      # 缓存命中率持续低于 80%
+      - uid: alert-cache-hit-low
+        title: 缓存命中率过低
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange: { from: 900, to: 0 }
+            model:
+              expr: |
+                sum(rate(ecom_cache_total{result="hit"}[10m]))
+                / sum(rate(ecom_cache_total[10m])) < 0.8
+              instant: true
+              refId: A
+        for: 10m
+        labels:
+          severity: warn
+          service: query
+        annotations:
+          summary: 缓存命中率 < 80% 持续 10min
+          description: 可能存在大量 cache miss, 检查热 key 失效 / Redis 抖动
+
+      # JVM 堆使用率 > 90%
+      - uid: alert-jvm-heap
+        title: JVM 堆使用率过高
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: prometheus
+            relativeTimeRange: { from: 600, to: 0 }
+            model:
+              expr: |
+                jvm_memory_used_bytes{area="heap"}
+                / jvm_memory_max_bytes{area="heap"} > 0.9
+              instant: true
+              refId: A
+        for: 5m
+        labels:
+          severity: critical
+          service: '{{ $labels.service }}'
+        annotations:
+          summary: '{{ $labels.service }} 堆使用率 > 90%'
+          description: 接近 OOM, 排查内存泄漏或调整 -Xmx
+
+  # ────────────── Loki 日志告警 ──────────────
+  - orgId: 1
+    name: log-alerts
+    folder: ecom-analytics
+    interval: 1m
+    rules:
+      # ERROR 日志爆发 (>10 条/min)
+      - uid: alert-error-log-burst
+        title: ERROR 日志爆发
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: loki
+            relativeTimeRange: { from: 300, to: 0 }
+            model:
+              expr: |
+                sum by (service) (count_over_time({job="ecom-analytics"} |= "ERROR" [1m])) > 10
+              instant: true
+              refId: A
+        for: 2m
+        labels:
+          severity: error
+        annotations:
+          summary: '{{ $labels.service }} ERROR 日志 > 10 条/min'
+          description: 持续 2 分钟以上, 排查最近上线或下游故障
+
+      # DLQ 死信入库
+      - uid: alert-dlq-message
+        title: MQ 死信入库
+        condition: A
+        data:
+          - refId: A
+            datasourceUid: loki
+            relativeTimeRange: { from: 600, to: 0 }
+            model:
+              expr: |
+                sum(count_over_time({job="ecom-analytics"} |= "DEAD_LETTER" [5m])) > 0
+              instant: true
+              refId: A
+        for: 0m   # 一条死信也立刻报
+        labels:
+          severity: critical
+          service: processor
+        annotations:
+          summary: 出现 MQ 死信消息
+          description: JoinTempScan / Kafka DLQ 出现死信, 检查 alertservice 推过来的飞书消息
