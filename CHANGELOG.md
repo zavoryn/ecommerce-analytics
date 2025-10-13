@@ -3,3 +3,4 @@
 [2025-10-14T09:54:08] feat: implement Kafka producer and consumer
 [2025-10-14T14:05:21] feat: add clickstream event schema and parser
 [2025-10-14T14:31:20] feat: add clickstream event schema and parser
+[2025-10-14T07:41:43] feat: implement real-time metrics aggregation
