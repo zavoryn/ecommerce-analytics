@@ -1,0 +1,28 @@
+[
+  {
+    "resource": "query",
+    "grade": 0,
+    "count": 1000,
+    "timeWindow": 10,
+    "minRequestAmount": 20,
+    "statIntervalMs": 10000,
+    "slowRatioThreshold": 0.5
+  },
+  {
+    "resource": "search",
+    "grade": 0,
+    "count": 1500,
+    "timeWindow": 10,
+    "minRequestAmount": 20,
+    "statIntervalMs": 10000,
+    "slowRatioThreshold": 0.5
+  },
+  {
+    "resource": "collector",
+    "grade": 2,
+    "count": 50,
+    "timeWindow": 30,
+    "minRequestAmount": 100,
+    "statIntervalMs": 10000
+  }
+]

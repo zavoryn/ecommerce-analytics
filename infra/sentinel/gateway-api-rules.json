@@ -1,0 +1,16 @@
+[
+  {
+    "apiName": "ranking-hot",
+    "predicateItems": [
+      { "pattern": "/api/ranking/top-items",    "matchStrategy": 0 },
+      { "pattern": "/api/ranking/hot-keywords", "matchStrategy": 0 }
+    ]
+  },
+  {
+    "apiName": "operation-overview",
+    "predicateItems": [
+      { "pattern": "/api/operation/gmv-overview", "matchStrategy": 0 },
+      { "pattern": "/api/operation/gmv-trend",    "matchStrategy": 0 }
+    ]
+  }
+]

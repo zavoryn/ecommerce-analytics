@@ -1,0 +1,30 @@
+[
+  {
+    "resource": "collector",
+    "count": 2000,
+    "intervalSec": 1,
+    "controlBehavior": 0,
+    "burst": 0,
+    "maxQueueingTimeoutMs": 500
+  },
+  {
+    "resource": "query",
+    "count": 400,
+    "intervalSec": 1
+  },
+  {
+    "resource": "operation",
+    "count": 400,
+    "intervalSec": 1
+  },
+  {
+    "resource": "ranking",
+    "count": 400,
+    "intervalSec": 1
+  },
+  {
+    "resource": "search",
+    "count": 600,
+    "intervalSec": 1
+  }
+]
