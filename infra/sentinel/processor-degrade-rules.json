@@ -1,0 +1,36 @@
+[
+  {
+    "resource": "event:persist",
+    "grade": 0,
+    "count": 1000,
+    "timeWindow": 10,
+    "minRequestAmount": 20,
+    "statIntervalMs": 10000,
+    "slowRatioThreshold": 0.5
+  },
+  {
+    "resource": "order:upsert",
+    "grade": 0,
+    "count": 1500,
+    "timeWindow": 10,
+    "minRequestAmount": 10,
+    "statIntervalMs": 10000,
+    "slowRatioThreshold": 0.5
+  },
+  {
+    "resource": "event:persist",
+    "grade": 1,
+    "count": 0.05,
+    "timeWindow": 30,
+    "minRequestAmount": 50,
+    "statIntervalMs": 10000
+  },
+  {
+    "resource": "order:upsert",
+    "grade": 1,
+    "count": 0.05,
+    "timeWindow": 30,
+    "minRequestAmount": 20,
+    "statIntervalMs": 10000
+  }
+]

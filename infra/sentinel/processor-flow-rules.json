@@ -1,0 +1,18 @@
+[
+  {
+    "resource": "event:persist",
+    "grade": 1,
+    "count": 5000,
+    "limitApp": "default",
+    "strategy": 0,
+    "controlBehavior": 0
+  },
+  {
+    "resource": "order:upsert",
+    "grade": 1,
+    "count": 2000,
+    "limitApp": "default",
+    "strategy": 0,
+    "controlBehavior": 0
+  }
+]
