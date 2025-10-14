@@ -6,3 +6,4 @@
 [2025-10-14T07:41:43] feat: implement real-time metrics aggregation
 [2025-10-14T22:28:47] feat: add Flink streaming job framework
 [2025-10-14T17:15:49] feat: implement user behavior sessionization
+[2025-10-14T17:22:47] fix: resolve watermark and late data handling
