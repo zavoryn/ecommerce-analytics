@@ -13,3 +13,4 @@
 [2025-10-17T17:35:48] feat: add Flink streaming job framework
 [2025-10-17T12:13:08] feat: add Flink streaming job framework
 [2025-10-17T09:43:15] feat: add clickstream event schema and parser
+[2025-10-17T21:29:12] feat: add clickstream event schema and parser
