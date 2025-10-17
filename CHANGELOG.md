@@ -8,3 +8,4 @@
 [2025-10-14T17:15:49] feat: implement user behavior sessionization
 [2025-10-14T17:22:47] fix: resolve watermark and late data handling
 [2025-10-15T13:04:12] feat: add clickstream event schema and parser
+[2025-10-17T16:58:33] feat: add Flink streaming job framework
