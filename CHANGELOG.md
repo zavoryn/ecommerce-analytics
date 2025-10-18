@@ -16,3 +16,4 @@
 [2025-10-17T21:29:12] feat: add clickstream event schema and parser
 [2025-10-17T16:04:47] refactor: optimize Flink window operations
 [2025-10-17T14:13:02] feat: implement metrics dashboard query API
+[2025-10-18T12:14:43] docs: add pipeline architecture documentation
