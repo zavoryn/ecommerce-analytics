@@ -19,3 +19,4 @@
 [2025-10-18T12:14:43] docs: add pipeline architecture documentation
 [2025-10-19T15:04:32] test: add pipeline integration tests
 [2025-10-24T10:18:07] feat: implement real-time metrics aggregation
+[2025-10-24T15:05:36] feat: add hourly and daily metrics rollup
