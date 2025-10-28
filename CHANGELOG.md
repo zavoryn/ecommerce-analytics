@@ -28,3 +28,4 @@
 [2025-10-28T21:55:01] test: add pipeline integration tests
 [2025-10-28T11:48:05] refactor: optimize Flink window operations
 [2025-10-28T08:52:38] refactor: optimize Flink window operations
+[2025-10-28T22:28:51] feat: add data collector microservice
