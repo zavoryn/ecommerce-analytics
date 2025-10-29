@@ -31,3 +31,4 @@
 [2025-10-28T22:28:51] feat: add data collector microservice
 [2025-10-29T10:25:55] feat: add clickstream event schema and parser
 [2025-10-29T08:57:01] feat: implement user behavior sessionization
+[2025-10-29T10:02:38] feat: add anomaly detection with CEP
