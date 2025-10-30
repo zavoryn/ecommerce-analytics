@@ -37,3 +37,4 @@
 [2025-10-29T20:04:51] test: add pipeline integration tests
 [2025-10-30T18:37:28] perf: tune parallelism and checkpoint config
 [2025-10-30T09:51:39] test: add pipeline integration tests
+[2025-10-30T17:24:32] perf: tune parallelism and checkpoint config
