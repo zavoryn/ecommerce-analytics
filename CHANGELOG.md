@@ -42,3 +42,4 @@
 [2025-10-31T12:32:45] fix: resolve watermark and late data handling
 [2025-10-31T10:59:47] fix: resolve watermark and late data handling
 [2025-10-31T17:47:37] feat: add data collector microservice
+[2025-10-31T15:45:23] feat: implement user behavior sessionization
