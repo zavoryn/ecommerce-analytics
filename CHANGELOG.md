@@ -40,3 +40,4 @@
 [2025-10-30T17:24:32] perf: tune parallelism and checkpoint config
 [2025-10-30T21:06:05] feat: add Flink streaming job framework
 [2025-10-31T12:32:45] fix: resolve watermark and late data handling
+[2025-10-31T10:59:47] fix: resolve watermark and late data handling
