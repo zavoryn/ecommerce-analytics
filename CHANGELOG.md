@@ -49,3 +49,4 @@
 [2025-11-03T20:06:21] feat: add anomaly detection with CEP
 [2025-11-03T13:05:59] fix: resolve watermark and late data handling
 [2025-11-03T08:51:27] feat: implement user behavior sessionization
+[2025-11-03T17:03:36] feat: implement user behavior sessionization
