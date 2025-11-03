@@ -51,3 +51,4 @@
 [2025-11-03T08:51:27] feat: implement user behavior sessionization
 [2025-11-03T17:03:36] feat: implement user behavior sessionization
 [2025-11-03T21:50:59] feat: add data collector microservice
+[2025-11-03T14:33:09] feat: add hourly and daily metrics rollup
