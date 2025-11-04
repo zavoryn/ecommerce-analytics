@@ -54,3 +54,4 @@
 [2025-11-03T14:33:09] feat: add hourly and daily metrics rollup
 [2025-11-04T15:12:37] docs: add pipeline architecture documentation
 [2025-11-04T16:15:04] feat: implement user behavior sessionization
+[2025-11-04T11:56:39] feat: add clickstream event schema and parser
