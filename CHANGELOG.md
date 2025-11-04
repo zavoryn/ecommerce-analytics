@@ -56,3 +56,4 @@
 [2025-11-04T16:15:04] feat: implement user behavior sessionization
 [2025-11-04T11:56:39] feat: add clickstream event schema and parser
 [2025-11-04T08:13:10] feat: implement real-time metrics aggregation
+[2025-11-04T09:58:58] feat: add hourly and daily metrics rollup
