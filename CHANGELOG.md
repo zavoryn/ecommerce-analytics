@@ -57,3 +57,4 @@
 [2025-11-04T11:56:39] feat: add clickstream event schema and parser
 [2025-11-04T08:13:10] feat: implement real-time metrics aggregation
 [2025-11-04T09:58:58] feat: add hourly and daily metrics rollup
+[2025-11-04T20:11:51] perf: tune parallelism and checkpoint config
