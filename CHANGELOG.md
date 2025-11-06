@@ -65,3 +65,4 @@
 [2025-11-06T19:16:40] feat: implement user behavior sessionization
 [2025-11-06T22:26:09] perf: tune parallelism and checkpoint config
 [2025-11-06T22:32:21] feat: implement Kafka producer and consumer
+[2025-11-06T09:30:06] feat: add clickstream event schema and parser
