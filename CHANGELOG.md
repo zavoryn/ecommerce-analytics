@@ -63,3 +63,4 @@
 [2025-11-06T22:05:57] feat: implement Kafka producer and consumer
 [2025-11-06T14:55:47] docs: add pipeline architecture documentation
 [2025-11-06T19:16:40] feat: implement user behavior sessionization
+[2025-11-06T22:26:09] perf: tune parallelism and checkpoint config
