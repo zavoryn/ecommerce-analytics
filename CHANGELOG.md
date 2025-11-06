@@ -61,3 +61,4 @@
 [2025-11-06T14:00:02] feat: implement real-time metrics aggregation
 [2025-11-06T21:55:48] refactor: optimize Flink window operations
 [2025-11-06T22:05:57] feat: implement Kafka producer and consumer
+[2025-11-06T14:55:47] docs: add pipeline architecture documentation
