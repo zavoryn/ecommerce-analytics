@@ -70,3 +70,4 @@
 [2025-11-07T10:43:20] feat: implement Kafka producer and consumer
 [2025-11-07T19:32:32] feat: implement real-time metrics aggregation
 [2025-11-07T08:37:44] feat: implement Kafka producer and consumer
+[2025-11-09T13:34:46] feat: add Flink streaming job framework
