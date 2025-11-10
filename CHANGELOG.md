@@ -71,3 +71,4 @@
 [2025-11-07T19:32:32] feat: implement real-time metrics aggregation
 [2025-11-07T08:37:44] feat: implement Kafka producer and consumer
 [2025-11-09T13:34:46] feat: add Flink streaming job framework
+[2025-11-10T12:01:32] docs: add pipeline architecture documentation
