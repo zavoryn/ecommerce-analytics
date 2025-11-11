@@ -72,3 +72,4 @@
 [2025-11-07T08:37:44] feat: implement Kafka producer and consumer
 [2025-11-09T13:34:46] feat: add Flink streaming job framework
 [2025-11-10T12:01:32] docs: add pipeline architecture documentation
+[2025-11-11T08:42:47] feat: add anomaly detection with CEP
