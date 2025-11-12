@@ -78,3 +78,4 @@
 [2025-11-11T11:45:58] feat: initialize analytics pipeline project
 [2025-11-11T13:29:47] feat: initialize analytics pipeline project
 [2025-11-12T15:20:12] feat: add anomaly detection with CEP
+[2025-11-12T15:28:12] perf: tune parallelism and checkpoint config
