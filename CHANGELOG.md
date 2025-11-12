@@ -77,3 +77,4 @@
 [2025-11-11T20:46:29] feat: implement metrics dashboard query API
 [2025-11-11T11:45:58] feat: initialize analytics pipeline project
 [2025-11-11T13:29:47] feat: initialize analytics pipeline project
+[2025-11-12T15:20:12] feat: add anomaly detection with CEP
