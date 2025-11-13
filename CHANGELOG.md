@@ -81,3 +81,4 @@
 [2025-11-12T15:28:12] perf: tune parallelism and checkpoint config
 [2025-11-12T21:20:31] feat: add Flink streaming job framework
 [2025-11-13T22:56:56] feat: add data collector microservice
+[2025-11-13T11:12:44] feat: add Flink streaming job framework
