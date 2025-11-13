@@ -83,3 +83,4 @@
 [2025-11-13T22:56:56] feat: add data collector microservice
 [2025-11-13T11:12:44] feat: add Flink streaming job framework
 [2025-11-13T08:21:11] feat: add hourly and daily metrics rollup
+[2025-11-13T08:12:43] feat: add anomaly detection with CEP
