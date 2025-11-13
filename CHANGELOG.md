@@ -88,3 +88,4 @@
 [2025-11-13T18:09:16] feat: add clickstream event schema and parser
 [2025-11-13T15:43:46] refactor: optimize Flink window operations
 [2025-11-13T15:23:02] feat: implement Kafka producer and consumer
+[2025-11-13T20:31:59] feat: add Flink streaming job framework
