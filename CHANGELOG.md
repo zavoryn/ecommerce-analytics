@@ -80,3 +80,4 @@
 [2025-11-12T15:20:12] feat: add anomaly detection with CEP
 [2025-11-12T15:28:12] perf: tune parallelism and checkpoint config
 [2025-11-12T21:20:31] feat: add Flink streaming job framework
+[2025-11-13T22:56:56] feat: add data collector microservice
