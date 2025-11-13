@@ -85,3 +85,4 @@
 [2025-11-13T08:21:11] feat: add hourly and daily metrics rollup
 [2025-11-13T08:12:43] feat: add anomaly detection with CEP
 [2025-11-13T16:42:32] feat: implement user behavior sessionization
+[2025-11-13T18:09:16] feat: add clickstream event schema and parser
