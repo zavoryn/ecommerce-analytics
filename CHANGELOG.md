@@ -84,3 +84,4 @@
 [2025-11-13T11:12:44] feat: add Flink streaming job framework
 [2025-11-13T08:21:11] feat: add hourly and daily metrics rollup
 [2025-11-13T08:12:43] feat: add anomaly detection with CEP
+[2025-11-13T16:42:32] feat: implement user behavior sessionization
