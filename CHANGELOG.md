@@ -91,3 +91,4 @@
 [2025-11-13T20:31:59] feat: add Flink streaming job framework
 [2025-11-14T22:22:26] refactor: optimize Flink window operations
 [2025-11-14T16:22:02] feat: add hourly and daily metrics rollup
+[2025-11-14T08:40:27] feat: add data collector microservice
