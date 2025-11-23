@@ -95,3 +95,4 @@
 [2025-11-18T11:39:55] feat: implement metrics dashboard query API
 [2025-11-22T21:28:09] docs: add pipeline architecture documentation
 [2025-11-22T07:06:41] feat: implement metrics dashboard query API
+[2025-11-23T21:53:00] feat: add Flink streaming job framework
