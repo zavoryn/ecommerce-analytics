@@ -100,3 +100,4 @@
 [2025-11-24T10:14:42] test: add pipeline integration tests
 [2025-11-24T12:43:11] feat: initialize analytics pipeline project
 [2025-11-24T22:38:48] test: add pipeline integration tests
+[2025-11-25T07:32:34] feat: implement metrics dashboard query API
