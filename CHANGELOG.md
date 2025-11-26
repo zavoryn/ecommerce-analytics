@@ -104,3 +104,4 @@
 [2025-11-25T14:20:30] feat: initialize analytics pipeline project
 [2025-11-25T13:30:05] feat: initialize analytics pipeline project
 [2025-11-25T22:46:35] perf: tune parallelism and checkpoint config
+[2025-11-26T22:10:39] feat: add clickstream event schema and parser
