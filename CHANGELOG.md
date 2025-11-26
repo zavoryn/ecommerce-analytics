@@ -109,3 +109,4 @@
 [2025-11-26T22:41:46] perf: tune parallelism and checkpoint config
 [2025-11-26T21:36:55] feat: implement user behavior sessionization
 [2025-11-26T10:35:37] docs: add pipeline architecture documentation
+[2025-11-26T19:00:23] docs: add pipeline architecture documentation
