@@ -113,3 +113,4 @@
 [2025-11-26T14:17:31] feat: implement real-time metrics aggregation
 [2025-11-27T14:30:25] feat: implement metrics dashboard query API
 [2025-11-27T20:00:26] feat: implement Kafka producer and consumer
+[2025-11-27T13:30:14] feat: add data collector microservice
