@@ -121,3 +121,4 @@
 [2025-11-28T13:22:49] feat: add anomaly detection with CEP
 [2025-11-28T22:35:01] fix: resolve watermark and late data handling
 [2025-11-28T20:54:47] test: add pipeline integration tests
+[2025-12-01T12:58:20] refactor: optimize Flink window operations
