@@ -123,3 +123,4 @@
 [2025-11-28T20:54:47] test: add pipeline integration tests
 [2025-12-01T12:58:20] refactor: optimize Flink window operations
 [2025-12-02T17:18:44] perf: tune parallelism and checkpoint config
+[2025-12-02T17:45:40] feat: add Flink streaming job framework
