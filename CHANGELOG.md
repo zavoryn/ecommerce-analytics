@@ -127,3 +127,4 @@
 [2025-12-02T19:48:45] perf: tune parallelism and checkpoint config
 [2025-12-02T21:50:31] feat: implement real-time metrics aggregation
 [2025-12-02T07:35:14] test: add pipeline integration tests
+[2025-12-02T22:27:46] feat: add data collector microservice
