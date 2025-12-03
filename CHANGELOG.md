@@ -131,3 +131,4 @@
 [2025-12-03T19:20:30] docs: add pipeline architecture documentation
 [2025-12-03T12:48:51] feat: add Flink streaming job framework
 [2025-12-03T11:11:49] feat: implement metrics dashboard query API
+[2025-12-03T11:21:58] feat: add data collector microservice
