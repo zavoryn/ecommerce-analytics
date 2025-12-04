@@ -132,3 +132,4 @@
 [2025-12-03T12:48:51] feat: add Flink streaming job framework
 [2025-12-03T11:11:49] feat: implement metrics dashboard query API
 [2025-12-03T11:21:58] feat: add data collector microservice
+[2025-12-04T21:28:24] feat: add clickstream event schema and parser
