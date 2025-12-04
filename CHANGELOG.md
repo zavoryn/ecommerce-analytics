@@ -141,3 +141,4 @@
 [2025-12-04T08:03:18] feat: implement user behavior sessionization
 [2025-12-05T07:08:21] perf: tune parallelism and checkpoint config
 [2025-12-05T12:50:07] feat: implement Kafka producer and consumer
+[2025-12-05T07:13:51] feat: add hourly and daily metrics rollup
