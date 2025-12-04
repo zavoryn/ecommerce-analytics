@@ -136,3 +136,4 @@
 [2025-12-04T07:11:51] feat: add data collector microservice
 [2025-12-04T13:56:12] feat: implement user behavior sessionization
 [2025-12-04T20:27:19] feat: add clickstream event schema and parser
+[2025-12-04T15:16:45] test: add pipeline integration tests
