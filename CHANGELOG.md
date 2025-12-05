@@ -140,3 +140,4 @@
 [2025-12-04T19:48:34] feat: add anomaly detection with CEP
 [2025-12-04T08:03:18] feat: implement user behavior sessionization
 [2025-12-05T07:08:21] perf: tune parallelism and checkpoint config
+[2025-12-05T12:50:07] feat: implement Kafka producer and consumer
