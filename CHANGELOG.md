@@ -156,3 +156,4 @@
 [2025-12-11T07:37:23] docs: add pipeline architecture documentation
 [2025-12-11T15:04:53] feat: implement user behavior sessionization
 [2025-12-11T15:15:17] feat: initialize analytics pipeline project
+[2025-12-11T17:13:09] perf: tune parallelism and checkpoint config
