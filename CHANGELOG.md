@@ -159,3 +159,4 @@
 [2025-12-11T17:13:09] perf: tune parallelism and checkpoint config
 [2025-12-11T15:31:25] feat: add Flink streaming job framework
 [2025-12-11T14:16:13] feat: implement real-time metrics aggregation
+[2025-12-11T16:33:28] feat: add hourly and daily metrics rollup
