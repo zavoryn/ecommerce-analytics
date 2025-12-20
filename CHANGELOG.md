@@ -160,3 +160,4 @@
 [2025-12-11T15:31:25] feat: add Flink streaming job framework
 [2025-12-11T14:16:13] feat: implement real-time metrics aggregation
 [2025-12-11T16:33:28] feat: add hourly and daily metrics rollup
+[2025-12-20T20:03:40] fix: resolve watermark and late data handling
