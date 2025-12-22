@@ -165,3 +165,4 @@
 [2025-12-22T14:23:44] feat: add clickstream event schema and parser
 [2025-12-22T22:51:22] feat: add data collector microservice
 [2025-12-22T17:42:45] feat: add Flink streaming job framework
+[2025-12-22T19:31:22] feat: add data collector microservice
