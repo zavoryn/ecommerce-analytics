@@ -161,3 +161,4 @@
 [2025-12-11T14:16:13] feat: implement real-time metrics aggregation
 [2025-12-11T16:33:28] feat: add hourly and daily metrics rollup
 [2025-12-20T20:03:40] fix: resolve watermark and late data handling
+[2025-12-22T21:40:48] feat: implement metrics dashboard query API
