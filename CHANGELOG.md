@@ -171,3 +171,4 @@
 [2025-12-23T09:41:04] feat: implement Kafka producer and consumer
 [2025-12-23T12:57:11] feat: implement Kafka producer and consumer
 [2025-12-23T08:56:49] test: add pipeline integration tests
+[2025-12-23T21:18:42] refactor: optimize Flink window operations
