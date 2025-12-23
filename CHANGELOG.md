@@ -174,3 +174,4 @@
 [2025-12-23T21:18:42] refactor: optimize Flink window operations
 [2025-12-23T11:50:24] perf: tune parallelism and checkpoint config
 [2025-12-23T16:14:45] perf: tune parallelism and checkpoint config
+[2025-12-23T11:43:49] feat: implement Kafka producer and consumer
