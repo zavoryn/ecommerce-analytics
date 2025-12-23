@@ -168,3 +168,4 @@
 [2025-12-22T19:31:22] feat: add data collector microservice
 [2025-12-22T12:15:20] feat: add data collector microservice
 [2025-12-22T12:30:19] feat: implement real-time metrics aggregation
+[2025-12-23T09:41:04] feat: implement Kafka producer and consumer
