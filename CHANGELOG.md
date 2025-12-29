@@ -181,3 +181,4 @@
 [2025-12-26T12:09:53] feat: implement metrics dashboard query API
 [2025-12-29T17:25:05] feat: implement Kafka producer and consumer
 [2025-12-29T11:17:41] feat: add clickstream event schema and parser
+[2025-12-29T18:43:40] feat: add hourly and daily metrics rollup
