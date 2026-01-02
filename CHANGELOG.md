@@ -187,3 +187,4 @@
 [2025-12-30T12:14:49] docs: add pipeline architecture documentation
 [2025-12-30T14:14:02] test: add pipeline integration tests
 [2025-12-30T14:13:42] feat: add Flink streaming job framework
+[2026-01-02T16:38:00] feat: add data collector microservice
