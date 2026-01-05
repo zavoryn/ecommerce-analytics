@@ -195,3 +195,4 @@
 [2026-01-04T11:32:54] refactor: optimize Flink window operations
 [2026-01-04T16:25:24] feat: add Flink streaming job framework
 [2026-01-05T09:50:35] feat: implement metrics dashboard query API
+[2026-01-05T12:57:24] feat: add anomaly detection with CEP
