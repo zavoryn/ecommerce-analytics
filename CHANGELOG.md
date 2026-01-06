@@ -200,3 +200,4 @@
 [2026-01-06T16:12:39] docs: add pipeline architecture documentation
 [2026-01-06T11:07:04] feat: implement real-time metrics aggregation
 [2026-01-06T18:04:59] perf: tune parallelism and checkpoint config
+[2026-01-06T08:26:56] docs: add pipeline architecture documentation
