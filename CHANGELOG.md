@@ -197,3 +197,4 @@
 [2026-01-05T09:50:35] feat: implement metrics dashboard query API
 [2026-01-05T12:57:24] feat: add anomaly detection with CEP
 [2026-01-05T21:47:21] feat: add data collector microservice
+[2026-01-06T16:12:39] docs: add pipeline architecture documentation
