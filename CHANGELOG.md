@@ -202,3 +202,4 @@
 [2026-01-06T18:04:59] perf: tune parallelism and checkpoint config
 [2026-01-06T08:26:56] docs: add pipeline architecture documentation
 [2026-01-06T09:47:53] feat: implement metrics dashboard query API
+[2026-01-07T21:21:28] feat: implement Kafka producer and consumer
