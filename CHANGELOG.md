@@ -208,3 +208,4 @@
 [2026-01-08T19:48:29] feat: add hourly and daily metrics rollup
 [2026-01-08T12:42:02] feat: initialize analytics pipeline project
 [2026-01-08T19:34:26] feat: add data collector microservice
+[2026-01-08T21:46:59] feat: add clickstream event schema and parser
