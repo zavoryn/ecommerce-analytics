@@ -225,3 +225,4 @@
 [2026-01-13T11:47:07] docs: add pipeline architecture documentation
 [2026-01-13T22:35:39] fix: resolve watermark and late data handling
 [2026-01-13T20:53:02] feat: implement metrics dashboard query API
+[2026-01-13T19:15:01] feat: add hourly and daily metrics rollup
