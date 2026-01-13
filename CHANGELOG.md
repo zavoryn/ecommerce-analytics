@@ -222,3 +222,4 @@
 [2026-01-13T14:57:33] test: add pipeline integration tests
 [2026-01-13T16:56:40] feat: add hourly and daily metrics rollup
 [2026-01-13T07:20:51] refactor: optimize Flink window operations
+[2026-01-13T11:47:07] docs: add pipeline architecture documentation
