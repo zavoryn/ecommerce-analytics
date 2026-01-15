@@ -235,3 +235,4 @@
 [2026-01-15T20:46:06] feat: add Flink streaming job framework
 [2026-01-15T13:29:55] feat: add Flink streaming job framework
 [2026-01-15T19:28:55] feat: implement metrics dashboard query API
+[2026-01-15T14:09:00] perf: tune parallelism and checkpoint config
