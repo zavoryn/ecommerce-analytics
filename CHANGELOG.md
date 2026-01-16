@@ -240,3 +240,4 @@
 [2026-01-16T21:45:04] feat: add hourly and daily metrics rollup
 [2026-01-16T22:49:49] feat: add Flink streaming job framework
 [2026-01-16T21:25:45] feat: add Flink streaming job framework
+[2026-01-16T20:47:03] perf: tune parallelism and checkpoint config
