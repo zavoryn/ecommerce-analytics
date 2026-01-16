@@ -238,3 +238,4 @@
 [2026-01-15T14:09:00] perf: tune parallelism and checkpoint config
 [2026-01-15T21:52:56] feat: implement metrics dashboard query API
 [2026-01-16T21:45:04] feat: add hourly and daily metrics rollup
+[2026-01-16T22:49:49] feat: add Flink streaming job framework
