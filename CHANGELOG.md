@@ -247,3 +247,4 @@
 [2026-01-17T10:14:25] feat: implement user behavior sessionization
 [2026-01-17T21:28:20] perf: tune parallelism and checkpoint config
 [2026-01-20T07:14:38] feat: add anomaly detection with CEP
+[2026-01-22T15:48:08] perf: tune parallelism and checkpoint config
