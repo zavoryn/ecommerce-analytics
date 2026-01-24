@@ -249,3 +249,4 @@
 [2026-01-20T07:14:38] feat: add anomaly detection with CEP
 [2026-01-22T15:48:08] perf: tune parallelism and checkpoint config
 [2026-01-22T17:27:03] perf: tune parallelism and checkpoint config
+[2026-01-24T18:17:09] refactor: optimize Flink window operations
