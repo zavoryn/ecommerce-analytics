@@ -254,3 +254,4 @@
 [2026-01-26T08:15:28] feat: add anomaly detection with CEP
 [2026-01-27T13:23:07] feat: add hourly and daily metrics rollup
 [2026-01-27T09:31:56] feat: implement metrics dashboard query API
+[2026-01-27T19:42:27] docs: add pipeline architecture documentation
