@@ -253,3 +253,4 @@
 [2026-01-26T14:17:59] feat: implement Kafka producer and consumer
 [2026-01-26T08:15:28] feat: add anomaly detection with CEP
 [2026-01-27T13:23:07] feat: add hourly and daily metrics rollup
+[2026-01-27T09:31:56] feat: implement metrics dashboard query API
