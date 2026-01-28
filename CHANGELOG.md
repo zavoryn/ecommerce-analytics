@@ -262,3 +262,4 @@
 [2026-01-28T13:24:49] test: add pipeline integration tests
 [2026-01-28T14:55:37] docs: add pipeline architecture documentation
 [2026-01-28T10:36:33] feat: add hourly and daily metrics rollup
+[2026-01-28T14:21:34] feat: add clickstream event schema and parser
