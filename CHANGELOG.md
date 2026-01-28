@@ -257,3 +257,4 @@
 [2026-01-27T19:42:27] docs: add pipeline architecture documentation
 [2026-01-27T21:00:00] perf: tune parallelism and checkpoint config
 [2026-01-27T11:47:02] feat: add Flink streaming job framework
+[2026-01-28T10:58:31] feat: add anomaly detection with CEP
