@@ -259,3 +259,4 @@
 [2026-01-27T11:47:02] feat: add Flink streaming job framework
 [2026-01-28T10:58:31] feat: add anomaly detection with CEP
 [2026-01-28T20:16:18] feat: add data collector microservice
+[2026-01-28T13:24:49] test: add pipeline integration tests
