@@ -266,3 +266,4 @@
 [2026-01-28T18:22:15] feat: add anomaly detection with CEP
 [2026-01-28T14:32:36] refactor: optimize Flink window operations
 [2026-01-28T15:21:09] feat: add clickstream event schema and parser
+[2026-01-30T08:40:33] feat: implement metrics dashboard query API
