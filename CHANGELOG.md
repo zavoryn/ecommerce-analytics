@@ -270,3 +270,4 @@
 [2026-01-30T15:57:13] feat: add anomaly detection with CEP
 [2026-01-30T07:43:33] refactor: optimize Flink window operations
 [2026-02-02T17:48:28] docs: add pipeline architecture documentation
+[2026-02-02T09:34:14] test: add pipeline integration tests
