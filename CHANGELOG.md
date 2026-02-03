@@ -275,3 +275,4 @@
 [2026-02-03T10:38:39] feat: implement metrics dashboard query API
 [2026-02-03T10:13:54] feat: add data collector microservice
 [2026-02-03T15:35:40] feat: add Flink streaming job framework
+[2026-02-03T14:02:37] perf: tune parallelism and checkpoint config
