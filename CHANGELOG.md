@@ -272,3 +272,4 @@
 [2026-02-02T17:48:28] docs: add pipeline architecture documentation
 [2026-02-02T09:34:14] test: add pipeline integration tests
 [2026-02-02T12:28:01] refactor: optimize Flink window operations
+[2026-02-03T10:38:39] feat: implement metrics dashboard query API
