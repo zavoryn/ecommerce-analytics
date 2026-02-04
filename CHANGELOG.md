@@ -280,3 +280,4 @@
 [2026-02-03T08:25:24] feat: add Flink streaming job framework
 [2026-02-03T14:45:32] refactor: optimize Flink window operations
 [2026-02-04T12:07:27] refactor: optimize Flink window operations
+[2026-02-04T14:54:19] feat: add clickstream event schema and parser
