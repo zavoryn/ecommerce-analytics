@@ -289,3 +289,4 @@
 [2026-02-05T10:28:31] feat: implement user behavior sessionization
 [2026-02-05T11:26:28] feat: add hourly and daily metrics rollup
 [2026-02-05T15:18:10] docs: add pipeline architecture documentation
+[2026-02-05T16:01:41] test: add pipeline integration tests
