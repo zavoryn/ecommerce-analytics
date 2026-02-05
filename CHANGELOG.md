@@ -282,3 +282,4 @@
 [2026-02-04T12:07:27] refactor: optimize Flink window operations
 [2026-02-04T14:54:19] feat: add clickstream event schema and parser
 [2026-02-05T14:43:40] refactor: optimize Flink window operations
+[2026-02-05T18:45:10] feat: add anomaly detection with CEP
