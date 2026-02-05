@@ -283,3 +283,4 @@
 [2026-02-04T14:54:19] feat: add clickstream event schema and parser
 [2026-02-05T14:43:40] refactor: optimize Flink window operations
 [2026-02-05T18:45:10] feat: add anomaly detection with CEP
+[2026-02-05T14:21:32] fix: resolve watermark and late data handling
