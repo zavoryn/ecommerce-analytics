@@ -292,3 +292,4 @@
 [2026-02-05T16:01:41] test: add pipeline integration tests
 [2026-02-06T18:30:45] docs: add pipeline architecture documentation
 [2026-02-08T07:06:37] docs: add pipeline architecture documentation
+[2026-02-09T19:00:27] feat: add clickstream event schema and parser
