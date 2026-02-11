@@ -300,3 +300,4 @@
 [2026-02-11T20:53:56] feat: implement user behavior sessionization
 [2026-02-11T17:01:32] feat: implement metrics dashboard query API
 [2026-02-11T21:22:07] feat: implement metrics dashboard query API
+[2026-02-11T22:20:05] feat: add clickstream event schema and parser
