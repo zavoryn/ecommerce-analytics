@@ -301,3 +301,4 @@
 [2026-02-11T17:01:32] feat: implement metrics dashboard query API
 [2026-02-11T21:22:07] feat: implement metrics dashboard query API
 [2026-02-11T22:20:05] feat: add clickstream event schema and parser
+[2026-02-12T19:55:41] feat: add clickstream event schema and parser
