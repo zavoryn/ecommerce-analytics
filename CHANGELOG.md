@@ -314,3 +314,4 @@
 [2026-03-03T09:17:05] feat: implement user behavior sessionization
 [2026-03-03T15:06:57] feat: implement Kafka producer and consumer
 [2026-03-03T17:55:04] feat: add anomaly detection with CEP
+[2026-03-03T20:32:40] feat: add hourly and daily metrics rollup
