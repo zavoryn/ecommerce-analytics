@@ -316,3 +316,4 @@
 [2026-03-03T17:55:04] feat: add anomaly detection with CEP
 [2026-03-03T20:32:40] feat: add hourly and daily metrics rollup
 [2026-03-04T16:38:29] feat: add hourly and daily metrics rollup
+[2026-03-04T11:52:56] feat: implement metrics dashboard query API
