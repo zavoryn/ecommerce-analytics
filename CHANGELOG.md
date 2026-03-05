@@ -320,3 +320,4 @@
 [2026-03-05T09:55:24] feat: implement user behavior sessionization
 [2026-03-05T12:37:29] docs: add pipeline architecture documentation
 [2026-03-05T19:42:47] perf: tune parallelism and checkpoint config
+[2026-03-05T15:14:59] fix: resolve watermark and late data handling
