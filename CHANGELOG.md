@@ -317,3 +317,4 @@
 [2026-03-03T20:32:40] feat: add hourly and daily metrics rollup
 [2026-03-04T16:38:29] feat: add hourly and daily metrics rollup
 [2026-03-04T11:52:56] feat: implement metrics dashboard query API
+[2026-03-05T09:55:24] feat: implement user behavior sessionization
