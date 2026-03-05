@@ -321,3 +321,4 @@
 [2026-03-05T12:37:29] docs: add pipeline architecture documentation
 [2026-03-05T19:42:47] perf: tune parallelism and checkpoint config
 [2026-03-05T15:14:59] fix: resolve watermark and late data handling
+[2026-03-05T12:09:54] feat: implement real-time metrics aggregation
