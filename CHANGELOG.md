@@ -329,3 +329,4 @@
 [2026-03-09T17:36:16] test: add pipeline integration tests
 [2026-03-10T19:07:50] feat: add data collector microservice
 [2026-03-10T16:35:30] feat: initialize analytics pipeline project
+[2026-03-10T14:55:18] feat: add anomaly detection with CEP
