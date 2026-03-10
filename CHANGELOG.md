@@ -327,3 +327,4 @@
 [2026-03-05T19:16:59] feat: implement real-time metrics aggregation
 [2026-03-08T13:41:16] feat: add clickstream event schema and parser
 [2026-03-09T17:36:16] test: add pipeline integration tests
+[2026-03-10T19:07:50] feat: add data collector microservice
