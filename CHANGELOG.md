@@ -333,3 +333,4 @@
 [2026-03-10T13:54:32] test: add pipeline integration tests
 [2026-03-10T09:07:37] feat: implement user behavior sessionization
 [2026-03-10T14:19:07] feat: implement real-time metrics aggregation
+[2026-03-11T21:50:05] feat: add hourly and daily metrics rollup
