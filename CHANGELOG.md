@@ -340,3 +340,4 @@
 [2026-03-11T21:59:04] test: add pipeline integration tests
 [2026-03-12T17:48:37] feat: implement Kafka producer and consumer
 [2026-03-12T08:27:53] docs: add pipeline architecture documentation
+[2026-03-12T19:23:37] fix: resolve watermark and late data handling
