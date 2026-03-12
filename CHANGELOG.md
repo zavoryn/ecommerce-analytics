@@ -343,3 +343,4 @@
 [2026-03-12T19:23:37] fix: resolve watermark and late data handling
 [2026-03-12T19:42:35] feat: add clickstream event schema and parser
 [2026-03-12T18:05:58] feat: add anomaly detection with CEP
+[2026-03-12T16:33:19] fix: resolve watermark and late data handling
