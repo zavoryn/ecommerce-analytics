@@ -341,3 +341,4 @@
 [2026-03-12T17:48:37] feat: implement Kafka producer and consumer
 [2026-03-12T08:27:53] docs: add pipeline architecture documentation
 [2026-03-12T19:23:37] fix: resolve watermark and late data handling
+[2026-03-12T19:42:35] feat: add clickstream event schema and parser
