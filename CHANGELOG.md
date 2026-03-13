@@ -345,3 +345,4 @@
 [2026-03-12T18:05:58] feat: add anomaly detection with CEP
 [2026-03-12T16:33:19] fix: resolve watermark and late data handling
 [2026-03-12T22:33:58] fix: resolve watermark and late data handling
+[2026-03-13T10:57:59] perf: tune parallelism and checkpoint config
