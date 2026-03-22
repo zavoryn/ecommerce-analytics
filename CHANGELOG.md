@@ -347,3 +347,4 @@
 [2026-03-12T22:33:58] fix: resolve watermark and late data handling
 [2026-03-13T10:57:59] perf: tune parallelism and checkpoint config
 [2026-03-18T16:47:52] perf: tune parallelism and checkpoint config
+[2026-03-22T20:40:55] docs: add pipeline architecture documentation
