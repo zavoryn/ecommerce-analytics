@@ -348,3 +348,4 @@
 [2026-03-13T10:57:59] perf: tune parallelism and checkpoint config
 [2026-03-18T16:47:52] perf: tune parallelism and checkpoint config
 [2026-03-22T20:40:55] docs: add pipeline architecture documentation
+[2026-03-24T09:59:27] docs: add pipeline architecture documentation
