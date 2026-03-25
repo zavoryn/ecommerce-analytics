@@ -353,3 +353,4 @@
 [2026-03-24T20:47:37] refactor: optimize Flink window operations
 [2026-03-24T14:37:40] feat: add anomaly detection with CEP
 [2026-03-25T15:43:49] feat: implement user behavior sessionization
+[2026-03-25T12:50:31] feat: implement metrics dashboard query API
