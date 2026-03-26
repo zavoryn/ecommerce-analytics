@@ -360,3 +360,4 @@
 [2026-03-26T21:59:31] feat: implement user behavior sessionization
 [2026-03-26T16:04:50] feat: add Flink streaming job framework
 [2026-03-26T18:47:01] feat: add clickstream event schema and parser
+[2026-03-26T13:29:31] fix: resolve watermark and late data handling
