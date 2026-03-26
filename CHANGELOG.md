@@ -358,3 +358,4 @@
 [2026-03-26T19:44:00] test: add pipeline integration tests
 [2026-03-26T14:04:56] feat: add anomaly detection with CEP
 [2026-03-26T21:59:31] feat: implement user behavior sessionization
+[2026-03-26T16:04:50] feat: add Flink streaming job framework
