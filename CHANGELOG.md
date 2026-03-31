@@ -362,3 +362,4 @@
 [2026-03-26T18:47:01] feat: add clickstream event schema and parser
 [2026-03-26T13:29:31] fix: resolve watermark and late data handling
 [2026-03-27T10:42:07] feat: add data collector microservice
+[2026-03-31T16:08:37] feat: add anomaly detection with CEP
