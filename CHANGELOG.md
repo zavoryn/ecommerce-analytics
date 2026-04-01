@@ -369,3 +369,4 @@
 [2026-03-31T12:55:59] feat: implement metrics dashboard query API
 [2026-04-01T22:10:34] docs: add pipeline architecture documentation
 [2026-04-01T07:30:07] docs: add pipeline architecture documentation
+[2026-04-01T14:50:56] fix: resolve watermark and late data handling
