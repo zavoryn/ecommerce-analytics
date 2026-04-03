@@ -380,3 +380,4 @@
 [2026-04-03T15:16:10] feat: add clickstream event schema and parser
 [2026-04-03T22:37:28] refactor: optimize Flink window operations
 [2026-04-03T14:13:12] perf: tune parallelism and checkpoint config
+[2026-04-03T16:57:08] docs: add pipeline architecture documentation
