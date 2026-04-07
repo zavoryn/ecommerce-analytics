@@ -385,3 +385,4 @@
 [2026-04-06T19:06:59] refactor: optimize Flink window operations
 [2026-04-07T16:43:30] feat: implement Kafka producer and consumer
 [2026-04-07T19:55:50] feat: add hourly and daily metrics rollup
+[2026-04-07T18:04:36] feat: add anomaly detection with CEP
