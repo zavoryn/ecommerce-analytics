@@ -390,3 +390,4 @@
 [2026-04-07T08:04:14] feat: initialize analytics pipeline project
 [2026-04-07T21:42:33] feat: add hourly and daily metrics rollup
 [2026-04-07T22:49:48] feat: implement user behavior sessionization
+[2026-04-09T21:25:59] docs: add pipeline architecture documentation
