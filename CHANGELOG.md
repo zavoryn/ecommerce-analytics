@@ -392,3 +392,4 @@
 [2026-04-07T22:49:48] feat: implement user behavior sessionization
 [2026-04-09T21:25:59] docs: add pipeline architecture documentation
 [2026-04-09T12:02:05] refactor: optimize Flink window operations
+[2026-04-09T14:13:06] feat: add anomaly detection with CEP
