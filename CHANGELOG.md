@@ -396,3 +396,4 @@
 [2026-04-09T14:48:57] fix: resolve watermark and late data handling
 [2026-04-09T08:22:26] feat: add data collector microservice
 [2026-04-09T09:38:54] feat: add data collector microservice
+[2026-04-09T13:49:53] docs: add pipeline architecture documentation
