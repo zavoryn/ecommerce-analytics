@@ -394,3 +394,4 @@
 [2026-04-09T12:02:05] refactor: optimize Flink window operations
 [2026-04-09T14:13:06] feat: add anomaly detection with CEP
 [2026-04-09T14:48:57] fix: resolve watermark and late data handling
+[2026-04-09T08:22:26] feat: add data collector microservice
