@@ -393,3 +393,4 @@
 [2026-04-09T21:25:59] docs: add pipeline architecture documentation
 [2026-04-09T12:02:05] refactor: optimize Flink window operations
 [2026-04-09T14:13:06] feat: add anomaly detection with CEP
+[2026-04-09T14:48:57] fix: resolve watermark and late data handling
