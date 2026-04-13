@@ -402,3 +402,4 @@
 [2026-04-11T09:06:05] refactor: optimize Flink window operations
 [2026-04-11T20:00:04] feat: add hourly and daily metrics rollup
 [2026-04-13T11:22:01] feat: add clickstream event schema and parser
+[2026-04-13T20:17:05] feat: implement metrics dashboard query API
