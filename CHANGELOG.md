@@ -401,3 +401,4 @@
 [2026-04-10T08:31:00] feat: add data collector microservice
 [2026-04-11T09:06:05] refactor: optimize Flink window operations
 [2026-04-11T20:00:04] feat: add hourly and daily metrics rollup
+[2026-04-13T11:22:01] feat: add clickstream event schema and parser
