@@ -403,3 +403,4 @@
 [2026-04-11T20:00:04] feat: add hourly and daily metrics rollup
 [2026-04-13T11:22:01] feat: add clickstream event schema and parser
 [2026-04-13T20:17:05] feat: implement metrics dashboard query API
+[2026-04-13T08:34:19] feat: add data collector microservice
