@@ -406,3 +406,4 @@
 [2026-04-13T08:34:19] feat: add data collector microservice
 [2026-04-14T10:56:47] feat: initialize analytics pipeline project
 [2026-04-14T12:42:44] feat: initialize analytics pipeline project
+[2026-04-14T08:17:08] fix: resolve watermark and late data handling
