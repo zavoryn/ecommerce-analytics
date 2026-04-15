@@ -410,3 +410,4 @@
 [2026-04-14T21:18:28] feat: add Flink streaming job framework
 [2026-04-14T10:16:34] feat: add clickstream event schema and parser
 [2026-04-15T10:03:14] feat: add data collector microservice
+[2026-04-15T20:52:13] perf: tune parallelism and checkpoint config
