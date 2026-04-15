@@ -409,3 +409,4 @@
 [2026-04-14T08:17:08] fix: resolve watermark and late data handling
 [2026-04-14T21:18:28] feat: add Flink streaming job framework
 [2026-04-14T10:16:34] feat: add clickstream event schema and parser
+[2026-04-15T10:03:14] feat: add data collector microservice
