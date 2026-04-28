@@ -425,3 +425,4 @@
 [2026-04-26T16:47:46] fix: resolve watermark and late data handling
 [2026-04-28T16:05:40] test: add pipeline integration tests
 [2026-04-28T16:13:16] feat: implement Kafka producer and consumer
+[2026-04-28T12:14:20] fix: resolve watermark and late data handling
