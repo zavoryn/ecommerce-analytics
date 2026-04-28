@@ -428,3 +428,4 @@
 [2026-04-28T12:14:20] fix: resolve watermark and late data handling
 [2026-04-28T12:18:02] feat: add hourly and daily metrics rollup
 [2026-04-28T20:46:32] docs: add pipeline architecture documentation
+[2026-04-28T08:14:07] feat: add anomaly detection with CEP
