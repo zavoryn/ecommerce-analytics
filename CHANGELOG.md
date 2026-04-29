@@ -436,3 +436,4 @@
 [2026-04-29T09:20:05] fix: resolve watermark and late data handling
 [2026-04-29T19:41:25] feat: implement user behavior sessionization
 [2026-04-29T18:47:08] docs: add pipeline architecture documentation
+[2026-04-29T18:22:13] feat: add clickstream event schema and parser
