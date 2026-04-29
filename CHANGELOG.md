@@ -430,3 +430,4 @@
 [2026-04-28T20:46:32] docs: add pipeline architecture documentation
 [2026-04-28T08:14:07] feat: add anomaly detection with CEP
 [2026-04-29T10:53:54] perf: tune parallelism and checkpoint config
+[2026-04-29T08:13:16] refactor: optimize Flink window operations
