@@ -437,3 +437,4 @@
 [2026-04-29T19:41:25] feat: implement user behavior sessionization
 [2026-04-29T18:47:08] docs: add pipeline architecture documentation
 [2026-04-29T18:22:13] feat: add clickstream event schema and parser
+[2026-04-29T16:33:08] perf: tune parallelism and checkpoint config
