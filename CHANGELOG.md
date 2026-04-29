@@ -435,3 +435,4 @@
 [2026-04-29T18:08:59] refactor: optimize Flink window operations
 [2026-04-29T09:20:05] fix: resolve watermark and late data handling
 [2026-04-29T19:41:25] feat: implement user behavior sessionization
+[2026-04-29T18:47:08] docs: add pipeline architecture documentation
