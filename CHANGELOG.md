@@ -442,3 +442,4 @@
 [2026-04-30T22:40:06] fix: resolve watermark and late data handling
 [2026-04-30T08:31:16] docs: add pipeline architecture documentation
 [2026-04-30T07:02:21] perf: tune parallelism and checkpoint config
+[2026-04-30T16:49:07] feat: add anomaly detection with CEP
