@@ -439,3 +439,4 @@
 [2026-04-29T18:22:13] feat: add clickstream event schema and parser
 [2026-04-29T16:33:08] perf: tune parallelism and checkpoint config
 [2026-04-30T08:56:45] feat: add clickstream event schema and parser
+[2026-04-30T22:40:06] fix: resolve watermark and late data handling
