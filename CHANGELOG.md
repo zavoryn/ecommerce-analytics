@@ -445,3 +445,4 @@
 [2026-04-30T16:49:07] feat: add anomaly detection with CEP
 [2026-04-30T08:04:22] feat: add anomaly detection with CEP
 [2026-04-30T12:02:18] feat: implement metrics dashboard query API
+[2026-05-01T19:20:05] feat: add Flink streaming job framework
