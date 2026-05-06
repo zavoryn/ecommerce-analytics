@@ -449,3 +449,4 @@
 [2026-05-04T11:54:15] feat: implement Kafka producer and consumer
 [2026-05-05T07:52:32] feat: implement Kafka producer and consumer
 [2026-05-06T10:24:40] feat: add data collector microservice
+[2026-05-06T17:14:49] perf: tune parallelism and checkpoint config
