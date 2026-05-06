@@ -448,3 +448,4 @@
 [2026-05-01T19:20:05] feat: add Flink streaming job framework
 [2026-05-04T11:54:15] feat: implement Kafka producer and consumer
 [2026-05-05T07:52:32] feat: implement Kafka producer and consumer
+[2026-05-06T10:24:40] feat: add data collector microservice
