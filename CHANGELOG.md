@@ -460,3 +460,4 @@
 [2026-05-07T11:57:37] feat: add clickstream event schema and parser
 [2026-05-07T21:46:17] refactor: optimize Flink window operations
 [2026-05-07T19:57:59] perf: tune parallelism and checkpoint config
+[2026-05-07T19:32:41] feat: add anomaly detection with CEP
