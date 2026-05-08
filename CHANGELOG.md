@@ -467,3 +467,4 @@
 [2026-05-08T17:52:19] docs: add pipeline architecture documentation
 [2026-05-08T14:34:23] feat: implement metrics dashboard query API
 [2026-05-08T21:53:45] test: add pipeline integration tests
+[2026-05-08T17:34:28] perf: tune parallelism and checkpoint config
