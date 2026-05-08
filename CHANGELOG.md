@@ -462,3 +462,4 @@
 [2026-05-07T19:57:59] perf: tune parallelism and checkpoint config
 [2026-05-07T19:32:41] feat: add anomaly detection with CEP
 [2026-05-07T10:24:13] feat: add Flink streaming job framework
+[2026-05-08T12:01:10] test: add pipeline integration tests
