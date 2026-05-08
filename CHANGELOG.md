@@ -468,3 +468,4 @@
 [2026-05-08T14:34:23] feat: implement metrics dashboard query API
 [2026-05-08T21:53:45] test: add pipeline integration tests
 [2026-05-08T17:34:28] perf: tune parallelism and checkpoint config
+[2026-05-08T20:55:00] feat: add Flink streaming job framework
